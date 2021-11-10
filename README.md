@@ -14,7 +14,7 @@ Fields are
 |:----------:|:-----------|
 | web_price_id | id of a product to which a property corresponds |
 | date_modified | time when a property was changed. The entry appears when a property is first added or when it is modified |
-| properties | string representing a dict whose 'key': 'value' pairs are 'property_alias': 'property_value' |
+| properties | string representing a dictionary whose 'key': 'value' pairs are 'property_alias': 'property_value' |
 
 Example
 | web_price_id | date_modified | properties |
@@ -30,4 +30,4 @@ Property aliases
 | nw | net weight (масса нетто) | weight of a product minus package weight | 0.1кг, 200г, 500мл, ...
 | gw | gross weight (масса брутто) | weight of a product including package (масса брутто) | 0.1кг, 200г, 500мл, ...
 
-Note fields package size/measuring unit and net weight/gross weight are often about the same thing, so that the information in them may be mutually exclusive. An exception might be when, for example, in a wholesale store you should buy many items at once (the box with 10 bottles of water, 5 packages of cottage cheese, etc). In that case the pair package size/measuring unit represents the size of a box, when a pair net weight/gross weight is about a spesific item inside this box.
+Note fields package size/measuring unit and net weight/gross weight are often about the same thing, so that the information in them may be mutually exclusive. An exception might be when, for example, in a wholesale store you should buy many items at once (the box with 10 bottles of water, 5 packages of cottage cheese, etc). In that case, the pair package size/measuring unit represents the size of a box, when a pair net weight/gross weight is about a specific item inside this box.
