@@ -19,9 +19,24 @@ Fields are
 Example
 | web_price_id | date_modified | properties |
 |:------------:|:-------------:|:----------:|
-|3400351       | 2021-11-09 00:00:00| '{"nw":"0.01кг", "gw":"0.01кг", "pp":"шт"}'
+|3400351       | 2021-11-09 00:00:00| {"nw":"0.01кг", "gw":"0.01кг", "pp":"шт"}
 
 Property aliases
+| Alias | Full name | Description | Values example 
+|:------|:----------|:------------|:--------------|
+| pc | pieces | number of pieces in product | 10, 20, 30 (it means that, for example, there are 30 nails in a package)
+| ps | package size | float or int number representing the size of a package | 2, 200, 0.7, ... | 
+| mu | measuring unit | measuring unit of a package size | кг, г, л, шт (штука), ... |  
+| pp | price per | this field answers the question "which unit is the price for in the rtpi_price table?" | шт (штука), уп (упаковка), кг, л,...
+| wn | net weight (масса нетто) | weight of a product minus package weight | 0.1, 200, 500, ...
+| wg | gross weight (масса брутто) | weight of a product including package (масса брутто) | 0.1, 200, 500, ...
+| wu | weight unit (единица измерения) | measurement unit of values in fields wn and/or wg | кг, г, ...
+| vm | volume | volume of a product | 0.5, 600, 10, ...
+| vu | volume unit | measurement unif of values in fields vm | л, мл, ...
+
+
+
+Property aliases (deprecated)
 | Alias | Full name | Description | Values example 
 |:------|:----------|:------------|:--------------|
 | ps | package size | float or int number representing the size of a package | 2, 200, 0.7, ... | 
